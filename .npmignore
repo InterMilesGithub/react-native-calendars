@@ -1,6 +1,9 @@
 .DS_Store
 .idea
+.github
 src/**/*.spec.js
+src/**/*.driver.js
+src/**/driver.js
 example/
 demo/
 ios/
@@ -8,9 +11,19 @@ android/
 index.android.js
 index.ios.js
 
-
-.npmignore
+.nvmrc
+.*ignore
 .watchmanconfig
+
+.eslintrc
+.eslintrc.js
+.prettierrc.json
+
+e2e
+spec
+test
+
+ISSUE_TEMPLATE.md
 
 
 #################
@@ -238,6 +251,14 @@ test/
 ios/
 android/
 demo/
+docsRNC/
 .babelrc
 # eslint-rules/
 scripts/
+
+# Typescript
+# ignore the .ts files
+*.ts
+*.tsx
+# include the .d.ts files
+!*.d.ts 
